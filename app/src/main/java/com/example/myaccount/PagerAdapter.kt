@@ -14,7 +14,7 @@ class PagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) : Fra
 
     override fun createFragment(position: Int): Fragment {
         when (position){
-            0 -> return PaymentFragment ()
+            0 -> return PaymentFragment()
             1 -> return ProductsFragment()
             else ->  { throw Resources.NotFoundException("Position Not Found") }
         }
